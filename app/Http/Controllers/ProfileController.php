@@ -18,4 +18,12 @@ class ProfileController extends Controller
             'people' => $people
         ]);
     }
+    public function home() {
+        $name = 'Karan Bharvadiya';
+
+
+        return view('home', [
+            'name' => $name
+        ]);
+    }
 }
